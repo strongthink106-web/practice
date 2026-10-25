@@ -1,0 +1,12 @@
+{
+  "name": "super-mobile-shop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Premium mobile showroom \u2013 static front-end + Netlify Functions/Blobs backend",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^8.1.0"
+  }
+}

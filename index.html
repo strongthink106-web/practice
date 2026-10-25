@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="কিশোর-কিশোরী ও নারীদের ট্রেন্ডি পোশাকের অনলাইন ক্লথিং মার্কেট। সাইজ, রং, কালেকশন ও দামের ফিল্টারসহ কেনাকাটা করুন.">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%91%97%3C/text%3E%3C/svg%3E">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Thread & Trend – কিশোর-কিশোরী ও নারীদের পোশাক</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<noscript><p style="padding:24px;text-align:center">এই ওয়েবসাইট চালাতে JavaScript চালু করুন।</p></noscript>
+<div class="mx-auto flex max-w-2xl flex-col pb-28">
+
+<div id="demoBar" data-t="demo.bar" class="hidden bg-slate-900 px-4 py-1.5 text-center text-xs font-medium text-slate-200">🧪 ডেমো মোড · নমুনা পণ্য, দাম ও রিভিউ – আসল তথ্য দিয়ে বদলান</div>
+<header class="sticky z-20 border-b border-gray-100 bg-white px-4 pb-3 pt-3" style="top:env(safe-area-inset-top,0px)">
+  <div class="mb-2 flex items-center justify-between">
+    <div id="shopName" class="select-none text-lg font-bold">👗 Thread & Trend</div>
+    <span class="flex items-center gap-2"><button id="admBadge" class="hidden rounded-full bg-emerald-50 px-2.5 py-1 text-xs font-semibold text-emerald-700 ring-1 ring-emerald-200">🔒 অ্যাডমিন</button><span id="shopTag" class="rounded-full bg-gray-100 px-2.5 py-1 text-xs text-gray-600">যমুনা ফিউচার পার্ক</span></span>
+  </div>
+  <div class="relative">
+    <svg class="absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+    <input id="q" aria-label="পোশাক খুঁজুন" enterkeyhint="search" autocomplete="off" autocapitalize="off" spellcheck="false" type="search" placeholder="আপনার পছন্দের পোশাক খুঁজুন..." class="w-full rounded-xl border border-gray-200 bg-gray-50 py-3 pl-10 pr-3 text-[15px] outline-none focus:border-blue-500 focus:bg-white">
+  </div>
+</header>
+
+<section id="hero" class="px-4 pt-3"><div id="heroBox" class="relative overflow-hidden rounded-3xl p-5" style="min-height:210px;background:radial-gradient(120% 120% at 100% 0%,#e0e7ff 0,#f8fafc 45%,#fff 100%)">
+ <div class="relative z-[1] max-w-[58%]"><div id="heroL" data-t="hero.lbl" class="text-xs font-bold tracking-widest text-slate-500">THREAD & TREND</div><h1 id="heroT" class="mt-1 text-2xl font-bold leading-tight"></h1><p id="heroS" class="mt-1 text-sm text-slate-600"></p>
+ <div class="mt-4 flex flex-wrap gap-2"><button id="heroGo" data-t="hero.b1" class="rounded-xl bg-gray-900 px-4 py-2.5 text-sm font-semibold text-white">সব পোশাক দেখুন</button><button id="heroOf" data-t="hero.b2" class="rounded-xl border border-gray-300 bg-white px-4 py-2.5 text-sm font-semibold">🔥 অফার</button></div></div>
+ <div id="heroPh" class="pointer-events-none absolute -right-1 bottom-2 flex h-[82%] w-[46%] items-end justify-end"></div></div></section>
+<section id="slider" class="hidden px-4 pt-3"><div id="slides" class="hs flex snap-x snap-mandatory overflow-x-auto rounded-3xl" role="region" aria-label="প্রচার ব্যানার"></div><div id="dots" class="mt-2 flex items-center justify-center gap-1.5"></div></section>
+<section id="offerSec" class="px-4 pt-3"> <div id="deal" class="flex items-center justify-between rounded-2xl border border-orange-200 bg-gradient-to-r from-orange-50 to-rose-50 p-3.5">
+    <div>
+      <div id="dealT" class="text-lg font-bold text-rose-600">🔥 ধামাকা অফার!</div>
+      <div id="dealX" class="text-xs text-gray-600">সীমিত সময়ে বিশেষ ছাড় – শেষ হতে বাকি</div>
+      <div id="cd" class="mt-1 text-base font-bold tabular-nums text-gray-900"></div>
+    </div>
+    <button id="dealBtn" class="rounded-xl bg-rose-600 px-4 py-2 text-sm font-semibold text-white active:scale-95">অফার দেখুন</button>
+  </div>
+</section>
+
+<section id="trust" class="px-4 pt-3"><div class="tr hs"><span data-t="trust.1">✨ ট্রেন্ডি কালেকশন</span><span data-t="trust.2">📏 সাইজ গাইড</span><span data-t="trust.3">↩️ সহজ রিটার্ন নীতি</span><span data-t="trust.4">💬 দ্রুত রেসপন্স</span></div></section>
+
+<section id="rows" class="px-4 pt-4"><h2 data-t="rows.best" class="mb-2 text-base font-bold">⭐ সেরা বিক্রি</h2><div id="best" class="hs -mx-4 flex gap-3 overflow-x-auto px-4 pb-2"></div><h2 data-t="rows.new" class="mb-2 mt-4 text-base font-bold">🆕 নতুন এসেছে</h2><div id="newest" class="hs -mx-4 flex gap-3 overflow-x-auto px-4 pb-2"></div></section>
+
+<section id="filters" class="px-4 pt-4">
+  <div id="conds" class="flex flex-wrap gap-2"></div>
+  <div id="cats" class="mt-2 flex flex-wrap gap-2"></div>
+
+  <h2 class="mb-2 mt-4 text-sm font-semibold text-gray-700">পোশাকের ধরন বাছাই করুন</h2>
+  <div id="brands" class="grid grid-cols-4 gap-2"></div>
+
+  <h2 class="mb-2 mt-4 text-sm font-semibold text-gray-700">আপনার বাজেট</h2>
+  <div class="flex items-center gap-2 rounded-xl border border-gray-200 bg-gray-50 px-3 focus-within:border-blue-500 focus-within:bg-white">
+    <span class="font-semibold text-gray-500">৳</span>
+    <input id="bud" aria-label="আপনার বাজেট (টাকা)" enterkeyhint="done" autocomplete="off" type="number" inputmode="numeric" min="0" placeholder="আপনার বাজেট কত লিখুন..." class="w-full bg-transparent py-3 text-[15px] outline-none">
+  </div>
+  <div id="ranges" class="mt-2 flex flex-wrap gap-2"></div>
+</section>
+
+<section id="gridSec" class="px-4 pt-5">
+  <div class="mb-3 flex items-center justify-between">
+    <h2 class="text-base font-bold">আপনার জন্য বাছাই করা পোশাক</h2>
+    <button id="reset" class="text-xs font-medium text-blue-600">ফিল্টার মুছুন</button>
+  </div>
+  <div class="mb-2 flex items-center justify-between gap-2"><div id="count" class="text-xs text-gray-500"></div><select id="sort" class="rounded-lg border border-gray-200 bg-white px-2 py-1.5 text-xs"><option value="">সাজান: ডিফল্ট</option><option value="pa">দাম: কম থেকে বেশি</option><option value="pd">দাম: বেশি থেকে কম</option><option value="rt">রেটিং অনুযায়ী</option></select></div>
+  <div id="grid" class="grid grid-cols-2 gap-3"><div class="sk"></div><div class="sk"></div><div class="sk"></div><div class="sk"></div></div>
+  <div id="empty" class="hidden rounded-2xl bg-gray-50 p-8 text-center text-gray-600">কোনো পোশাক পাওয়া যায়নি।<br>বাজেট বা ফিল্টার বদলে দেখুন।</div>
+  <button id="more" class="mx-auto mt-4 flex items-center gap-1.5 rounded-full border border-gray-300 px-5 py-2.5 text-sm font-semibold active:scale-95">
+    <span id="moreT"></span>
+    <svg id="arr" class="h-4 w-4 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+  </button>
+</section>
+<section id="why" class="px-4 pt-8"><h2 data-t="why.t" class="mb-3 text-base font-bold">কেন আমাদের শোরুম</h2><div class="space-y-3">
+<div class="rounded-2xl border border-gray-100 bg-white p-4 shadow-sm"><div data-t="why.1t" class="font-semibold">📍 শোরুমে সরাসরি দেখুন</div><div data-t="why.1d" class="mt-1 text-sm text-gray-600">সাইজ, ফেব্রিক ও ফিট দেখে নিজের পছন্দের পোশাক বেছে নিন।</div></div>
+<div class="rounded-2xl border border-gray-100 bg-white p-4 shadow-sm"><div data-t="why.2t" class="font-semibold">📏 সাইজ গাইড ও বিক্রয়োত্তর সেবা</div><div data-t="why.2d" class="mt-1 text-sm text-gray-600">শর্ত ও মেয়াদ প্রতিটি পোশাকের জন্য দোকানে জানুন।</div></div>
+<div class="rounded-2xl border border-gray-100 bg-white p-4 shadow-sm"><div data-t="why.3t" class="font-semibold">💬 দ্রুত যোগাযোগ</div><div data-t="why.3d" class="mt-1 text-sm text-gray-600">হোয়াটসঅ্যাপ বা পোশাকে জানুন দাম ও স্টক।</div></div></div>
+<p data-t="why.note" class="mt-2 text-[11px] text-gray-500">ডেমো কনটেন্ট – আপনার প্রকৃত তথ্য দিয়ে বদলান।</p></section>
+<section id="loc" class="px-4 pt-6"><div class="rounded-3xl bg-slate-900 p-5 text-white"><div id="locT" class="text-lg font-bold"></div><div id="locA" class="mt-1 text-sm text-slate-300"></div>
+<div class="mt-4 grid grid-cols-2 gap-2 text-center text-sm font-semibold"><a id="locC" class="rounded-xl bg-white/10 py-3">📞 কল</a><a id="locW" target="_blank" rel="noopener" class="rounded-xl bg-emerald-500 py-3">💬 WhatsApp</a><a id="locE" class="rounded-xl bg-white/10 py-3">✉️ ইমেইল</a><a id="locM" target="_blank" rel="noopener" class="rounded-xl bg-white/10 py-3">🗺️ ম্যাপ</a></div></div></section>
+<footer id="foot" class="px-4 pb-6 pt-6 text-center text-xs text-gray-500"><div id="ftN" class="font-semibold text-gray-700"></div><div id="soc" class="mt-3 flex flex-wrap justify-center gap-2"></div><div id="pgl" class="mt-3 flex flex-wrap justify-center gap-x-4 gap-y-1 text-sm text-gray-600"></div><div class="mt-1">© <span id="yr"></span> · <span data-t="foot.2">সব অধিকার সংরক্ষিত</span></div><div data-t="foot.1" class="mt-1">গোপনীয়তা নীতি · রিটার্ন ও ওয়ারেন্টি নীতি (দোকানের নীতি যোগ করুন)</div></footer>
+</div>
+
+<nav class="fixed inset-x-0 bottom-0 z-[36] border-t border-gray-200 bg-white/95 backdrop-blur" style="padding-bottom:env(safe-area-inset-bottom,0px)">
+  <div id="nav" class="mx-auto flex max-w-2xl"></div>
+</nav>
+
+<div id="pop" class="fixed inset-0 z-[50] hidden items-center justify-center bg-black/55 p-6">
+ <div class="relative w-full max-w-sm overflow-hidden rounded-3xl p-6 text-center shadow-2xl" style="background:linear-gradient(145deg,#0f172a,#1e293b)">
+  <button data-x class="absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-white" aria-label="বন্ধ করুন">✕</button>
+  <div id="popT" class="mt-2 text-2xl font-bold text-amber-300"></div>
+  <div id="popX" class="mt-1 text-sm text-slate-300"></div>
+  <div class="mt-3 text-xs text-slate-400">অফার শেষ হতে বাকি</div>
+  <div id="cd2" class="mt-1 text-2xl font-bold tabular-nums text-white"></div>
+  <button id="popGo" class="mt-5 w-full rounded-2xl py-3.5 text-base font-bold text-slate-900" style="background:linear-gradient(135deg,#fcd34d,#f59e0b)">অফারের পোশাকগুলো দেখুন</button>
+  <button data-x class="mt-3 text-sm text-slate-400">পরে দেখব</button>
+ </div></div>
+<div id="detail" class="fixed inset-0 z-[35] hidden overflow-y-auto bg-white"></div>
+<div id="sheet" class="fixed inset-0 z-40 hidden items-end bg-black/40">
+  <div class="mx-auto max-h-[80vh] w-full max-w-2xl overflow-y-auto rounded-t-3xl bg-white p-5" style="padding-bottom:calc(env(safe-area-inset-bottom,0px) + 20px)">
+    <div id="sheetBody"></div>
+  </div>
+</div>
+
+<script src="/app.js" defer></script>
+</body>
+</html>
